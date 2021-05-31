@@ -66,6 +66,8 @@
       url("../fonts/cuprumbolditalic.woff2") format("woff2");
 }
 
+
+
 /* Variables */
 
 :root {
@@ -92,6 +94,8 @@
   --white-transparent-30: rgba(255,255,255,0.3);
   --white-transparent-15: rgba(255,255,255,0.15);
 }
+
+
 
 /* Global */
 
@@ -181,6 +185,7 @@ ul {
   font-size: 13px;
   line-height: 24px;
 }
+
 
 
 /* Header */
@@ -365,6 +370,8 @@ ul {
   box-shadow: -1px 1px 5px var(--gray);
 }
 
+
+
 /* Services */
 
 .services {
@@ -442,4 +449,3 @@ ul {
 .footer__contacts-descr-link:active {
   color: var(--red);
 }
-
