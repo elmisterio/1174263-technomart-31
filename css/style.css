@@ -127,10 +127,6 @@ img {
   height: auto;
 }
 
-ul {
-  list-style: none;
-}
-
 .label-new {
   font-size: 14px;
   color: var(--white);
@@ -138,18 +134,18 @@ ul {
   text-transform: uppercase;
 }
 
-.red-bttn {
+.red-btn {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--red);
 }
 
-.red-bttn:hover {
+.red-btn:hover {
   background-color: var(--darkred);
 }
 
-.red-bttn:active {
+.red-btn:active {
   background-color: var(--winered);
 }
 
@@ -227,15 +223,15 @@ ul {
   color: var(--gray);
 }
 
-.main-header__order-bttn {
+.main-header__order-btn {
   background-color: var(--darkgreen);
 }
 
-.main-header__order-bttn:hover {
+.main-header__order-btn:hover {
   background-color: var(--green);
 }
 
-.main-header__order-bttn:active {
+.main-header__order-btn:active {
   color: var(--lightgray);
 }
 
@@ -244,8 +240,8 @@ ul {
 }
 
 .main-header__phone,
-.main-header__login-bttn,
-.main-header__registr-bttn {
+.main-header__login-btn,
+.main-header__registr-btn {
   font-size: 21px;
 }
 
@@ -259,22 +255,27 @@ ul {
   color: var(--darkblue);
 }
 
-.main-header__login-bttn,
-.main-header__registr-bttn {
+.main-header__link-login-list {
+  list-style: none;
+}
+
+.main-header__login-btn,
+.main-header__registr-btn {
   color: var(--black);
 }
 
-.main-header__login-bttn:hover,
-.main-header__registr-bttn:hover {
+.main-header__login-btn:hover,
+.main-header__registr-btn:hover {
   color: var(--red);
 }
 
-.main-header__login-bttn:active,
-.main-header__registr-bttn:active {
+.main-header__login-btn:active,
+.main-header__registr-btn:active {
   color: var(--gray);
 }
 
 .main-header__nav-list {
+  list-style: none;
   background-color: var(--blue);
 }
 
@@ -295,6 +296,10 @@ ul {
   font-size: 24px;
   line-height: 30px;
   color: var(--white);
+}
+
+.category__list {
+  list-style: none;
 }
 
 .category__materials {
@@ -332,7 +337,7 @@ ul {
 }
 
 .category__slider {
-  background-image: url(/img/catalog/catalog-hammer.jpg);
+  background-image: url(../img/catalog/catalog-hammer.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -352,11 +357,19 @@ ul {
 
 /* Popular items */
 
+.popular-items__list {
+  list-style: none;
+}
+
 .popular-items__item {
   border: 1px solid var(--lightgray);
 }
 
 /* Popular brands */
+
+.popular-brands__list {
+  list-style: none;
+}
 
 .popular-brands__item {
   border: 1px solid var(--lightgray);
@@ -378,6 +391,10 @@ ul {
   background-color: var(--lightgray);
 }
 
+.services__list {
+  list-style: none;
+}
+
 .services__link {
   font-size: 21px;
   color: var(--white);
@@ -392,6 +409,12 @@ ul {
 .services__link_current {
   color: var(--blue);
   background-color: var(--white);
+}
+
+/* About */
+
+.about__delivery-list {
+  list-style: none;
 }
 
 
@@ -414,6 +437,10 @@ ul {
   color: var(--white);
 }
 
+.footer__nav-list {
+  list-style: none;
+}
+
 .footer__nav-link_orange {
   color: var(--lightorange);
 }
@@ -429,6 +456,10 @@ ul {
 
 .footer__nav-link_orange:active {
   color: var(--orange);
+}
+
+.footer__social-list {
+  list-style: none;
 }
 
 .footer__copyright-descr,
