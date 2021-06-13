@@ -260,6 +260,26 @@ img {
   line-height: 24px;
 }
 
+.new-badge {
+  overflow: hidden;
+  position: relative;
+}
+
+.new-badge::after {
+  content: "NEW";
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  background: #ee3643;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
 
 
 /* Header */
@@ -287,7 +307,7 @@ img {
   display: block;
 }
 
-.main-header__main-title {
+.main-header__descr {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
