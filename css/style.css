@@ -105,6 +105,7 @@ body {
   min-width: 940px;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -190,7 +191,7 @@ img {
   border: 1px solid var(--lightgray);
 }
 
-.product-item:nth-child(4n) {
+.popular-items .product-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -421,6 +422,23 @@ img {
 
 .main-header__profile-name:active {
   color: var(--gray);
+}
+
+.main-header__profile-list {
+  display: flex;
+}
+
+.main-header__profile-list-item {
+  margin-right: 30px;
+  list-style: disc;
+}
+
+.main-header__profile-list-item:first-child {
+  list-style: none;
+}
+
+.main-header__profile-list-item:last-child {
+  margin-right: 0;
 }
 
 .main-header__profile-list-link {
@@ -701,9 +719,15 @@ img {
 }
 
 .catalog-main__bread-crumbs-list {
-  display: grid;
-  grid-template-columns: repeat(4, min-content);
-  gap: 20px;
+  display: flex;
+}
+
+.catalog-main__crumb-item {
+  margin-right: 40px;
+}
+
+.catalog-main__crumb-item:last-child {
+  margin-right: 0;
 }
 
 .catalog-main__main-title {
@@ -743,15 +767,26 @@ img {
   text-transform: uppercase;
 }
 
+.filter-form__brands,
+.filter-form__power {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter-form__show-btn {
   font-size: 13px;
   text-transform: uppercase;
   background-color: transparent;
 }
 
+.products {
+  width: 700px;
+}
+
 .products__header {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
   font-size: 13px;
   text-transform: uppercase;
   background-color: var(--peach);
@@ -762,7 +797,7 @@ img {
 }
 
 .products__header-item {
-  justify-self: end;
+  margin-right: 10px;
 }
 
 .products__header-link:not(.products__header-link_current) {
@@ -786,15 +821,19 @@ img {
 }
 
 .products__header-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .products__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+.catalog-main .product-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .products__page-link:not(.products__page-link_current) {
@@ -805,9 +844,11 @@ img {
 }
 
 .products__page-list {
-  display: grid;
-  grid-template-columns: repeat(4, min-content);
-  gap: 10px;
+  display: flex;
+}
+
+.products__page-number {
+  margin-right: 10px;
 }
 
 .products__page-link:hover:not(.products__page-link_current) {
