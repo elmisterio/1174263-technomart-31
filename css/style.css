@@ -543,7 +543,25 @@ img {
 }
 
 .main-header__login-btn {
+  position: relative;
   padding-left: 50px;
+}
+
+.main-header__login-btn::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  width: 23px;
+  height: 20px;
+  background-image: url("../img/icons/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.main-header__login-btn:hover::before {
+  opacity: 1;
 }
 
 .main-header__login-list-item {
