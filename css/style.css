@@ -638,10 +638,6 @@ img {
   color: var(--red);
 }
 
-.main-header__login-list-item:hover .main-header__login-icon path  {
-  fill: var(--darkblue);
-}
-
 .main-header__login-btn:active,
 .main-header__registration-btn:active {
   color: var(--gray);
@@ -1355,7 +1351,7 @@ img {
   border: none;
 }
 
-.filter-form__price span {
+.filter-form__price .filter-form__price-span {
   margin-right: 6.5px;
   margin-left: 6.5px;
 }
@@ -1614,8 +1610,8 @@ img {
   top: 1px;
 }
 
-.link-up:hover path,
-.link-down:hover path {
+.link-up:hover .link-svg-path,
+.link-down:hover .link-svg-path {
   fill: var(--black);
 }
 
@@ -1639,7 +1635,7 @@ img {
   color: var(--red);
 }
 
-.products__header-link_current svg path {
+.products__header-link_current .link-svg-path {
   fill: var(--red);
 }
 
@@ -1662,7 +1658,7 @@ img {
   transition: all 0.5s ease-out;
 }
 
-.product-item:hover img {
+.product-item:hover .product-item__img {
   visibility: hidden;
 }
 
