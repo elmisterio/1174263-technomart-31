@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Станислав Смолянко](https://up.htmlacademy.ru/htmlcss/31/user/1174263).
-* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 

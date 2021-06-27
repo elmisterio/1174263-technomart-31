@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="body">
@@ -27,7 +27,7 @@
             </form>
             <a class="main-header__favorite" href="#">Закладки: 0</a>
             <a class="main-header__cart" href="#">Корзина: 0</a>
-            <a class="main-header__order-btn btn" href="#">Оформить заказ</a>
+            <a class="main-header__order-btn" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -45,10 +45,10 @@
             <h2 class="section-title visually-hidden">Кнопки авторизации</h2>
             <ul class="main-header__link-login-list">
               <li class="main-header__login-list-item">
-                <a class="main-header__login-btn btn" href="#">Вход</a>
+                <a class="main-header__login-btn" href="#">Вход</a>
               </li>
               <li>
-                <a class="main-header__registration-btn btn" href="#">Регистрация</a>
+                <a class="main-header__registration-btn" href="#">Регистрация</a>
               </li>
             </ul>
           </section>
@@ -117,16 +117,18 @@
                 <a class="category__link" href="#">Бесплатно</a>
               </article>
             </li>
-            <li class="category__item">
-              <article class="category__slider slider category__item-article">
+            <li class="category__item slider slider-hammer">
+              <article class="category__item-article">
                 <h3 class="slider__title">Перфораторы</h3>
                 <p class="slider__subtitle">Настоящие мужские игрушки</p>
-                <a class="red-btn" href="catalog.html">Открыть каталог</a>
-                <!--
-                Стрелки слайдера
-                <span></span>
-                <span></span>
-                -->
+                <a class="red-btn btn" href="catalog.html">Открыть каталог</a>
+              </article>
+            </li>
+            <li class="category__item slider slider-drill visually-hidden">
+              <article class="category__item-article">
+                <h3 class="slider__title">Дрели</h3>
+                <p class="slider__subtitle">Соседям на радость!</p>
+                <a class="red-btn btn" href="catalog.html">Открыть каталог</a>
               </article>
             </li>
           </ul>
@@ -137,15 +139,15 @@
         <div class="container">
           <header class="popular-items__header section-header">
             <h2 class="section-title">Популярные товары</h2>
-            <a class="red-btn" href="#">Все популярные товары</a>
+            <a class="red-btn btn" href="#">Все популярные товары</a>
           </header>
           <ul class="popular-items__list">
             <li class="popular-items__item product-item">
               <img src="img/catalog/bosch-9000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 9000">
               <h3 class="product-item__title">Перфоратор BOSCH BFG 9000</h3>
-              <del class="product-item__old-price">32500 Р.</del>
+              <s class="product-item__old-price">32500 Р.</s>
               <a class="product-item__new-price" href="#">25500 Р.</a>
-              <div class="product-item__buttons product-item__buttons-off">
+              <div class="product-item__buttons off">
                 <button class="product-item__buy-btn" type="submit">Купить</button>
                 <button class="product-item__fav-btn" type="submit">В закладки</button>
               </div>
@@ -153,9 +155,9 @@
             <li class="popular-items__item product-item new-badge">
               <img src="img/catalog/bosch-3000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 3000">
               <h3 class="product-item__title">Перфоратор BOSCH BFG 3000</h3>
-              <del class="product-item__old-price old-price">22500 Р.</del>
+              <s class="product-item__old-price old-price">22500 Р.</s>
               <a class="product-item__new-price" href="#">15500 Р.</a>
-              <div class="product-item__buttons product-item__buttons-off">
+              <div class="product-item__buttons off">
                 <button class="product-item__buy-btn" type="submit">Купить</button>
                 <button class="product-item__fav-btn" type="submit">В закладки</button>
               </div>
@@ -163,9 +165,9 @@
             <li class="popular-items__item product-item">
               <img src="img/catalog/bosch-6000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 6000">
               <h3 class="product-item__title">Перфоратор BOSCH BFG 6000</h3>
-              <del class="product-item__old-price old-price">30500 Р.</del>
+              <s class="product-item__old-price old-price">30500 Р.</s>
               <a class="product-item__new-price" href="#">25500 Р.</a>
-              <div class="product-item__buttons product-item__buttons-off">
+              <div class="product-item__buttons off">
                 <button class="product-item__buy-btn" type="submit">Купить</button>
                 <button class="product-item__fav-btn" type="submit">В закладки</button>
               </div>
@@ -173,9 +175,9 @@
             <li class="popular-items__item product-item new-badge">
               <img src="img/catalog/bosch-2000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 2000">
               <h3 class="product-item__title">Перфоратор BOSCH BFG 2000</h3>
-              <del class="product-item__old-price old-price">22500 Р.</del>
+              <s class="product-item__old-price old-price">22500 Р.</s>
               <a class="product-item__new-price" href="#">12500 Р.</a>
-              <div class="product-item__buttons product-item__buttons-off">
+              <div class="product-item__buttons off">
                 <button class="product-item__buy-btn" type="submit">Купить</button>
                 <button class="product-item__fav-btn" type="submit">В закладки</button>
               </div>
@@ -188,7 +190,7 @@
         <div class="container">
           <header class="popular-brands__header section-header">
             <h2 class="section-header__title section-title">Популярные производители</h2>
-            <a class="section-header__link red-btn" href="#">Все производители</a>
+            <a class="section-header__link red-btn btn" href="#">Все производители</a>
           </header>
           <ul class="popular-brands__list">
             <li class="popular-brands__item">
@@ -254,27 +256,25 @@
                 <a class="services__link" href="#">Кредит</a>
               </li>
             </ul>
-            <section class="services__delivery">
+            <section class="services__section services__delivery">
               <h2 class="section-title">Доставка</h2>
               <p class="descr">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
             </section>
-            <!-- <section>
+            <section class="services__section services__warranty off">
               <h2 class="section-title">Гарантия</h2>
-              <p class="descr">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!</p>
+              <p class="descr">Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </section>
-            <section>
+            <section class="services__section services__credit off">
               <h2 class="section-title">Кредит</h2>
-              <p class="descr">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж!</p>
-            </section> -->
+              <p class="descr">Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.</p>
+            </section>
           </div>
         </div>
       </section>
@@ -294,7 +294,7 @@
               <li class="about__delivery-item">Автотрейдинг</li>
               <li class="about__delivery-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="about__link red-btn" href="#">Подробнее о компании</a>
+            <a class="about__link red-btn btn" href="#">Подробнее о компании</a>
           </section>
 
           <section class="contacts">
@@ -306,8 +306,43 @@
             <a class="contacts__link-map" href="#">
               <img src="img/map.jpg" width="300" height="160" alt="Превью карты">
             </a>
-            <a class="contacts__link-help red-btn" href="#">Заблудились? Напишите нам</a>
+            <a class="contacts__link-help red-btn btn" href="#">Заблудились? Напишите нам</a>
+
+            <section class="contacts__modal modal modal-map off">
+              <h2 class="modal__title visually-hidden">Модальное окно - Карта</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608418675!2d30.31521485197165!3d59.968265981798055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624820736680!5m2!1sru!2sru" width="943" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <button class="modal__close-btn btn" type="submit" aria-label="Закрыть"></button>
+            </section>
+
+            <section class="contacts__modal modal modal-feedback off">
+              <h2 class="modal__title visually-hidden">Модальное окно - Форма обратной связи</h2>
+              <form class="modal__form" action="post">
+                  <div class="modal__form-grid-wrapper">
+                    <label class="modal__label">
+                      Ваше имя:
+                      <input class="modal__input" type="text" name="name" placeholder="Имя Фамилия">
+                    </label>
+
+                    <label class="modal__label">
+                      Ваш e-mail:
+                      <input class="modal__input" type="email" name="email" placeholder="email@example.com">
+                    </label>
+
+                    <label class="modal__label modal__textarea">
+                      Текст письма:
+                      <textarea class="modal__input modal__textarea-input" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    </label>
+                  </div>
+
+                  <div class="modal__form-button-wrapper">
+                    <button class="modal__order-btn red-btn btn" type="submit">Отправить</button>
+                  </div>
+              </form>
+              <button class="modal__close-btn btn" type="submit" aria-label="Закрыть"></button>
+            </section>
           </section>
+
+
         </div>
       </section>
     </main>
