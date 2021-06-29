@@ -1346,6 +1346,7 @@ img {
 .catalog-main__bread-crumbs-list {
   order: -1;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -1366,7 +1367,7 @@ img {
   background-position: 0 0;
 }
 
-.catalog-main__crumb-item_current::after {
+.catalog-main__crumb-item:last-child::after {
   display: none;
 }
 
@@ -1725,10 +1726,12 @@ img {
 
 .products__page-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .products__page-number {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .products__page-link {
