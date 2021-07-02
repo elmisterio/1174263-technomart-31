@@ -171,7 +171,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   border: none;
-  outline: none;
   background-color: transparent;
   cursor: pointer;
 }
@@ -713,6 +712,10 @@ img {
   opacity: 0.3;
 }
 
+.main-header__profile-name-link:focus::after {
+  opacity: 1;
+}
+
 .main-header__profile-list {
   display: flex;
   justify-content: center;
@@ -948,9 +951,6 @@ img {
 }
 
 .popular-brands__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 145px;
   border: 1px solid var(--lightgray);
   transition: all 0.3s ease-out;
@@ -962,6 +962,14 @@ img {
 
 .popular-brands__item:active {
   box-shadow: -1px 1px 5px var(--gray);
+}
+
+.popular-brands__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -1023,7 +1031,9 @@ img {
   width: 100%;
   font-size: 21px;
   color: var(--white);
+  text-align: left;
   background-color: var(--blue);
+  border: none;
 }
 
 .services__item:last-child {
@@ -1492,6 +1502,7 @@ img {
   margin-bottom: 20px;
 }
 
+
 .filter-form__brands-list-item:last-child,
 .filter-form__power-item:last-child {
   margin-bottom: 0;
@@ -1552,6 +1563,15 @@ img {
   opacity: 0.3;
 }
 
+.filter-form__brand-input:focus + .filter-form__brand-item::before {
+  border: 3px solid var(--black);
+  opacity: 0.4;
+}
+
+.filter-form__brand-input:focus + .filter-form__brand-item::after {
+  opacity: 1;
+}
+
 .filter-form__power-item {
   position: relative;
   padding-left: 35px;
@@ -1598,6 +1618,16 @@ img {
 
 .filter-form__power-input:checked + .filter-form__power-item:active::after {
   opacity: 0.3;
+}
+
+.filter-form__power-input:focus + .filter-form__power-item::before {
+  border-color: var(--black);
+  opacity: 0.5;
+}
+
+.filter-form__power-input:focus + .filter-form__power-item::after {
+  background-color: var(--black);
+  opacity: 0.5;
 }
 
 .filter-form__show-btn {

@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="body">
@@ -20,7 +20,7 @@
             <a class="main-header__logo logo" href="index.html">
               <img class="main-header__logo-img" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
             </a>
-            <form class="main-header__form" action="index.html">
+            <form class="main-header__form" method="get" action="index.html">
               <label class="main-header__search-input-label">
                 <input class="main-header__search-input" type="search" name="search" placeholder="Поиск:">
               </label>
@@ -247,13 +247,13 @@
           <div class="services__grid-wrapper">
             <ul class="services__list">
               <li class="services__item">
-                <a class="services__link services__link_current" href="#">Доставка</a>
+                <button class="services__link services__link_current" href="#">Доставка</button>
               </li>
               <li class="services__item">
-                <a class="services__link" href="#">Гарантия</a>
+                <button class="services__link" href="#">Гарантия</button>
               </li>
               <li class="services__item">
-                <a class="services__link" href="#">Кредит</a>
+                <button class="services__link" href="#">Кредит</button>
               </li>
             </ul>
             <section class="services__section services__delivery">
@@ -306,7 +306,7 @@
             <a class="contacts__link-map" href="#">
               <img src="img/map.jpg" width="300" height="160" alt="Превью карты">
             </a>
-            <a class="contacts__link-help red-btn btn" href="#">Заблудились? Напишите нам</a>
+            <button class="contacts__link-help red-btn btn" href="#">Заблудились? Напишите нам</button>
 
             <section class="contacts__modal modal modal-map off">
               <h2 class="modal__title visually-hidden">Модальное окно - Карта</h2>
