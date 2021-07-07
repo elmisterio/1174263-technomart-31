@@ -1034,6 +1034,7 @@ img {
   text-align: left;
   background-color: var(--blue);
   border: none;
+  cursor: pointer;
 }
 
 .services__item:last-child {
@@ -1828,6 +1829,7 @@ img {
   top: 355px;
   bottom: auto;
   width: 620px;
+  animation: bounce 0.5s;
 }
 
 .modal::before {
@@ -1885,7 +1887,8 @@ img {
   position: absolute;
   top: 12px;
   right: -15px;
-  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .modal__close-btn::before,
@@ -1921,6 +1924,7 @@ img {
   margin: auto;
   top: 50%;
   bottom: auto;
+  animation: bounce 0.5s;
 }
 
 .modal__form-grid-wrapper {
@@ -1968,6 +1972,28 @@ img {
   background-color: var(--peach);
 }
 
-.modal__order-btn {
+.contacts__modal .modal__order-btn {
   width: 100%;
+}
+
+
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  90% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
