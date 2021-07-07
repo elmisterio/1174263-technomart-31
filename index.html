@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="body">
@@ -188,9 +188,9 @@
             <h2 class="modal__title visually-hidden">Модальное окно - Товар добавлен в корзину</h2>
             <p class="modal__text">Товар добавлен в корзину!</p>
             <div class="modal__buttons">
-              <button class="modal__order-btn red-btn btn" type="submit">Оформить заказ</button>
-              <button class="modal__continue-btn btn" type="submit">Продолжить покупки</button>
-              <button class="modal__close-btn btn" type="submit" aria-label="Закрыть"></button>
+              <button class="modal__order-btn red-btn btn" type="button">Оформить заказ</button>
+              <button class="modal__continue-btn btn" type="button">Продолжить покупки</button>
+              <button class="modal__close-btn btn" type="button" aria-label="Закрыть"></button>
             </div>
           </section>
         </div>
@@ -257,13 +257,13 @@
           <div class="services__grid-wrapper">
             <ul class="services__list">
               <li class="services__item">
-                <button class="services__link services__link_current" href="#">Доставка</button>
+                <button class="services__link services__link_current" type="button">Доставка</button>
               </li>
               <li class="services__item">
-                <button class="services__link" href="#">Гарантия</button>
+                <button class="services__link" type="button">Гарантия</button>
               </li>
               <li class="services__item">
-                <button class="services__link" href="#">Кредит</button>
+                <button class="services__link" type="button">Кредит</button>
               </li>
             </ul>
             <section class="services__section services__delivery">
@@ -316,7 +316,7 @@
             <a class="contacts__link-map" href="#">
               <img src="img/map.jpg" width="300" height="160" alt="Превью карты">
             </a>
-            <button class="contacts__link-help red-btn btn" href="#">Заблудились? Напишите нам</button>
+            <button class="contacts__link-help red-btn btn" type="button">Заблудились? Напишите нам</button>
 
             <section class="contacts__modal modal modal-map off">
               <h2 class="modal__title visually-hidden">Модальное окно - Карта</h2>
@@ -461,7 +461,7 @@
       </div>
     </footer>
 
-    <script src="js/popup-feedback.js"></script>
-    <script src="js/popup-cart.js"></script>
+    <script src="js/popup-feedback.min.js"></script>
+    <script src="js/popup-cart.min.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 let buyButton = document.querySelectorAll('.product-item__buy-btn');
 let cartModal = document.querySelector('.modal-cart');
-let cartCloseButton = feedbackModal.querySelectorAll('.modal__close-btn');
+let cartCloseButton = cartModal.querySelectorAll('.modal__close-btn');
 
 buyButton.forEach(buyButton => buyButton.addEventListener('click', evt => {
   evt.preventDefault();
