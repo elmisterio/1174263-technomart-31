@@ -13,12 +13,11 @@
 
   <body class="body">
     <header class="main-header">
-
       <div class="main-header__top">
         <div class="container">
           <div class="main-header__grid-wrapper-top">
             <a class="main-header__logo logo" href="index.html">
-              <img class="main-header__logo-img" src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
+              <img class="main-header__logo-img" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
             </a>
             <form class="main-header__form" method="get" action="index.html">
               <label class="main-header__search-input-label">
@@ -35,17 +34,17 @@
       <div class="main-header__bottom container">
         <h1 class="main-header__main-title section-title visually-hidden">Интернет-магазин строительных материалов и инструментов - Главная</h1>
         <div class="main-header__grid-wrapper-bottom-contacts">
-          <p class="main-header__descr">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="main-header__descr">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
           <section class="main-header__contacts">
             <h2 class="section-title visually-hidden">Контактная информация</h2>
             <a class="main-header__phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="main-header__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           </section>
-          <section>
+          <section class="main-header__login">
             <h2 class="section-title visually-hidden">Кнопки авторизации</h2>
             <ul class="main-header__link-login-list">
               <li class="main-header__login-list-item">
-                <a class="main-header__login-btn" href="#">Вход</a>
+                <a class="main-header__login-btn" href="#">Войти</a>
               </li>
               <li>
                 <a class="main-header__registration-btn" href="#">Регистрация</a>
@@ -138,12 +137,14 @@
       <section class="popular-items">
         <div class="container">
           <header class="popular-items__header section-header">
-            <h2 class="section-title">Популярные товары</h2>
+            <h2 class="section-title">Популярные товары:</h2>
             <a class="red-btn btn" href="#">Все популярные товары</a>
           </header>
           <ul class="popular-items__list">
             <li class="popular-items__item product-item">
-              <img src="img/catalog/bosch-9000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 9000">
+              <div class="product-item__img-wrapper">
+                <img src="img/catalog/bosch-9000.jpg" class="product-item__img" width="220" height="160" alt="Перфоратор с буром, зеленого цвета, с красными кнопками">
+              </div>
               <h3 class="product-item__title">Перфоратор BOSCH BFG 9000</h3>
               <s class="product-item__old-price">32500 Р.</s>
               <a class="product-item__new-price" href="#">25500 Р.</a>
@@ -153,7 +154,9 @@
               </div>
             </li>
             <li class="popular-items__item product-item new-badge">
-              <img src="img/catalog/bosch-3000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 3000">
+              <div class="product-item__img-wrapper">
+                <img src="img/catalog/bosch-3000.jpg" class="product-item__img" width="220" height="160" alt="Перфоратор с буром, зеленого цвета, с красными кнопками">
+              </div>
               <h3 class="product-item__title">Перфоратор BOSCH BFG 3000</h3>
               <s class="product-item__old-price old-price">22500 Р.</s>
               <a class="product-item__new-price" href="#">15500 Р.</a>
@@ -163,7 +166,9 @@
               </div>
             </li>
             <li class="popular-items__item product-item">
-              <img src="img/catalog/bosch-6000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 6000">
+              <div class="product-item__img-wrapper">
+                <img src="img/catalog/bosch-6000.jpg" class="product-item__img" width="220" height="160" alt="Перфоратор с длинным буром, зеленого цвета, с красными кнопками">
+              </div>
               <h3 class="product-item__title">Перфоратор BOSCH BFG 6000</h3>
               <s class="product-item__old-price old-price">30500 Р.</s>
               <a class="product-item__new-price" href="#">25500 Р.</a>
@@ -173,7 +178,9 @@
               </div>
             </li>
             <li class="popular-items__item product-item new-badge">
-              <img src="img/catalog/bosch-2000.jpg" class="product-item__img" width="220" height="160" alt="Фото Перфоратора BOSCH, модель BFG 2000">
+              <div class="product-item__img-wrapper">
+                <img src="img/catalog/bosch-2000.jpg" class="product-item__img" width="220" height="160" alt="Перфоратор с буром, зеленого цвета, с красными кнопками">
+              </div>
               <h3 class="product-item__title">Перфоратор BOSCH BFG 2000</h3>
               <s class="product-item__old-price old-price">22500 Р.</s>
               <a class="product-item__new-price" href="#">12500 Р.</a>
@@ -190,7 +197,7 @@
             <div class="modal__buttons">
               <button class="modal__order-btn red-btn btn" type="button">Оформить заказ</button>
               <button class="modal__continue-btn btn" type="button">Продолжить покупки</button>
-              <button class="modal__close-btn btn" type="button" aria-label="Закрыть"></button>
+              <button class="modal__close-btn" type="button" aria-label="Закрыть"></button>
             </div>
           </section>
         </div>
@@ -220,7 +227,7 @@
             </li>
             <li class="popular-brands__item">
               <a class="popular-brands__link" href="#">
-                <img src="img/logo/logo-interskol.png" width="150" height="45" alt="Логотип компании Интерскол">
+                <img src="img/logo/logo-interskol.png" width="185" height="45" alt="Логотип компании Интерскол">
               </a>
             </li>
             <li class="popular-brands__item">
@@ -268,9 +275,9 @@
             </ul>
             <section class="services__section services__delivery">
               <h2 class="section-title">Доставка</h2>
-              <p class="descr">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
+              <p class="descr">Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно! <br>
+                Ведь мы неплохо заработаем, <br>
                 поднимая его на ваш этаж!</p>
             </section>
             <section class="services__section services__warranty off">
@@ -296,7 +303,7 @@
             <h2 class="about__title section-title">Компания «Техномарт»</h2>
             <p class="about__descr descr">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p class="about__descr descr">
-              Мы можем доставить ваш товар в самые отдаленные точки России!
+              Мы можем доставить ваш товар в самые отдаленные точки России! <br>
               Техномарт работает со многими транспортными компаниями:
             </p>
             <ul class="about__delivery-list">
@@ -304,7 +311,7 @@
               <li class="about__delivery-item">Автотрейдинг</li>
               <li class="about__delivery-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="about__link red-btn btn" href="#">Подробнее о компании</a>
+            <a class="about__link red-btn btn" href="blank.html">Подробнее о компании</a>
           </section>
 
           <section class="contacts">
@@ -313,10 +320,10 @@
               Вы можете забрать товар сами,
               заехав в наш офис:
             </p>
-            <a class="contacts__link-map" href="#">
+            <a class="contacts__link-map" href="blank.html">
               <img src="img/map.jpg" width="300" height="160" alt="Превью карты">
             </a>
-            <button class="contacts__link-help red-btn btn" type="button">Заблудились? Напишите нам</button>
+            <a class="contacts__link-help red-btn btn" href="blank.html">Заблудились? Напишите нам</a>
 
             <section class="contacts__modal modal modal-map off">
               <h2 class="modal__title visually-hidden">Модальное окно - Карта</h2>
@@ -362,7 +369,7 @@
             <section class="footer__contacts">
               <h2 class="footer__title section-title visually-hidden">Контакты</h2>
               <a class="footer__logo logo" href="index.html">
-                <img src="img/logo-technomart-big.svg" alt="Логотип интернет-магазина Техномарт">
+                <img src="img/logo-technomart-big.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
               </a>
               <address>
                 <p class="footer__address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -452,7 +459,7 @@
               <address class="footer__feedback">
                 <p class="footer__contacts-feedback">Обратная связь:</p>
                 <a class="footer__contacts-descr-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                <p class="footer__contacts-developer">Разработано:</p>
+                <p class="footer__contacts-developer">Разработано -</p>
                 <a class="footer__contacts-descr-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </address>
             </section>
