@@ -1360,14 +1360,11 @@ img {
 
 .footer__address,
 .footer__phone {
-  color: var(--white);
-}
-
-.footer__address {
   margin: 0;
   padding: 0;
   font-style: normal;
   font-weight: 400;
+  color: var(--white);
 }
 
 .footer__nav-list {
@@ -2007,10 +2004,11 @@ img {
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  transform: translate3d(0, -50%, 0);
   z-index: 20;
   margin: auto;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -2020,7 +2018,6 @@ img {
 
 .modal-cart {
   box-sizing: border-box;
-  top: 355px;
   bottom: auto;
   width: 620px;
   animation: bounce 0.5s;
@@ -2118,7 +2115,6 @@ img {
   width: 943px;
   height: 449px;
   margin: auto;
-  top: 50%;
   bottom: auto;
   animation: fade-in 0.5s;
 }
@@ -2126,9 +2122,6 @@ img {
 .modal-feedback {
   width: 620px;
   height: 430px;
-  margin: auto;
-  top: 50%;
-  bottom: auto;
   animation: bounce 0.5s;
 }
 
@@ -2191,19 +2184,15 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    transform: translateY(130%);
   }
 
   70% {
-    transform: translateY(-10px);
+    transform: translateY(-70%);
   }
 
   90% {
-    transform: translateY(30px);
-  }
-
-  100% {
-    transform: translateY(0);
+    transform: translateY(-40%);
   }
 }
 
