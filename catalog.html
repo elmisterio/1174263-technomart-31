@@ -45,7 +45,9 @@
             <h2 class="section-title visually-hidden">Меню авторизованного пользователя</h2>
             <p class="main-header__profile-name">
               <a class="main-header__profile-name-link" href="#">Равшан Джамшутович</a>
-              <a class="main-header__profile-logout-link visually-hidden" href="#">Выход</a>
+              <a class="main-header__profile-logout-link" href="#" aria-label="Деавторизация пользователя">
+                <img src="img/icons/icon-logout.svg" width="20" height="20" alt="Иконка деавторизации пользователя">
+              </a>
             </p>
             <ul class="main-header__profile-list">
               <li class="main-header__profile-list-item">
@@ -117,13 +119,13 @@
                 <fieldset class="filter-form__price">
                   <legend class="filter-form__price-title">Цена:</legend>
                   <div class="filter-form__range-filter">
-                    <div class="filter-form__range-controls" tabindex="0">
+                    <div class="filter-form__range-controls" tabindex="0" aria-label="Блок с элементами управления ценой">
                       <div class="filter-form__range-bar-gray">
                         <div class="filter-form__range-bar-green"></div>
                       </div>
                     </div>
-                    <div class="filter-form__control-item filter-form__control-item-min"></div>
-                    <div class="filter-form__control-item filter-form__control-item-max"></div>
+                    <div class="filter-form__control-item filter-form__control-item-min" tabindex="0" aria-label="Ползунок управления минимальной ценой"></div>
+                    <div class="filter-form__control-item filter-form__control-item-max" tabindex="0" aria-label="Ползунок управления максимальной ценой"></div>
 
                     <div class="filter-form__price">
                       <label class="filter-form__price-item-min">
