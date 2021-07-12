@@ -7,8 +7,9 @@
   font-display: swap;
   src:
       local("PT Sans"),
-      url("../fonts/ptsans.woff") format("woff"),
-      url("../fonts/ptsans.woff2") format("woff2");
+      url("../fonts/ptsans.woff2") format("woff2"),
+      url("../fonts/ptsans.woff") format("woff");
+
 }
 
 @font-face {
@@ -18,8 +19,9 @@
   font-display: swap;
   src:
       local("PT Sans"),
-      url("../fonts/ptsansbold.woff") format("woff"),
-      url("../fonts/ptsansbold.woff2") format("woff2");
+      url("../fonts/ptsansbold.woff2") format("woff2"),
+      url("../fonts/ptsansbold.woff") format("woff");
+
 }
 
 @font-face {
@@ -29,8 +31,9 @@
   font-display: swap;
   src:
       local("Cuprum"),
-      url("../fonts/cuprum.woff") format("woff"),
-      url("../fonts/cuprum.woff2") format("woff2");
+      url("../fonts/cuprum.woff2") format("woff2"),
+      url("../fonts/cuprum.woff") format("woff");
+
 }
 
 @font-face {
@@ -40,8 +43,9 @@
   font-display: swap;
   src:
       local("Cuprum"),
-      url("../fonts/cuprumbold.woff") format("woff"),
-      url("../fonts/cuprumbold.woff2") format("woff2");
+      url("../fonts/cuprumbold.woff2") format("woff2"),
+      url("../fonts/cuprumbold.woff") format("woff");
+
 }
 
 @font-face {
@@ -51,8 +55,9 @@
   font-display: swap;
   src:
       local("Cuprum"),
-      url("../fonts/cuprumitalic.woff") format("woff"),
-      url("../fonts/cuprumitalic.woff2") format("woff2");
+      url("../fonts/cuprumitalic.woff2") format("woff2"),
+      url("../fonts/cuprumitalic.woff") format("woff");
+
 }
 
 @font-face {
@@ -62,8 +67,9 @@
   font-display: swap;
   src:
       local("Cuprum"),
-      url("../fonts/cuprumbolditalic.woff") format("woff"),
-      url("../fonts/cuprumbolditalic.woff2") format("woff2");
+      url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+      url("../fonts/cuprumbolditalic.woff") format("woff");
+
 }
 
 
@@ -77,6 +83,7 @@
   --blackgray:#282828;
   --blue: #32425C;
   --darkblue: #293449;
+  --verydarkblue: #161D29;
   --indigo: #293449;
   --red: #EE3643;
   --darkred: #b80d18;
@@ -466,7 +473,12 @@ img {
 .main-header__search-input:focus {
   color: var(--white);
   outline: none;
-  background-color: transparent;
+  color: var(--darkblue);
+  background-color: var(--white);
+}
+
+.main-header__search-input:focus::placeholder {
+  color: var(--darkblue);
 }
 
 .main-header__search-input-label::before {
@@ -480,6 +492,13 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+}
+
+.main-header__search-input:focus + .main-header__search-input-label::before {
+  background-image: url("../img/icons/icon-search-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
 }
 
 .main-header__search-input-label:hover::before {
@@ -505,6 +524,11 @@ img {
 
 .main-header__favorite:hover::before {
   opacity: 1;
+
+}
+
+.main-header__favorite:active::before {
+  opacity: 0.3;
 }
 
 .main-header__cart {
@@ -529,6 +553,10 @@ img {
   opacity: 1;
 }
 
+.main-header__cart:active::before {
+  opacity: 0.3;
+}
+
 .main-header__cart_full {
   background-color: var(--red);
 }
@@ -549,6 +577,7 @@ img {
 .main-header__favorite:active,
 .main-header__cart:active {
   color: var(--gray);
+  background-color: var(--verydarkblue);
 }
 
 .main-header__order-btn {
@@ -588,6 +617,7 @@ img {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: middle;
   padding: 7px 50px 7px 74px;
   color: var(--red);
   border: 3px solid var(--white);
@@ -648,6 +678,10 @@ img {
 
 .main-header__login-btn:hover::before {
   opacity: 1;
+}
+
+.main-header__login-btn:active::before {
+  opacity: 0.3;
 }
 
 .main-header__login-list-item {
@@ -745,10 +779,6 @@ img {
 .main-header__profile-name-link:active::before,
 .main-header__profile-name-link:active::after {
   opacity: 0.3;
-}
-
-.main-header__profile-name-link:focus::after {
-  opacity: 1;
 }
 
 .main-header__profile-list {
@@ -974,6 +1004,42 @@ img {
 
 .slider .red-btn {
   padding: 7px 47px;
+}
+
+.slider__pagination_first::before {
+  content: "";
+  position: absolute;
+  bottom: 37px;
+  right: 315px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__pagination_second::before {
+  content: "";
+  position: absolute;
+  bottom: 37px;
+  right: 295px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__pagination_second::after {
+  content: "";
+  position: absolute;
+  bottom: 39px;
+  right: 297px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--red);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 
@@ -1333,7 +1399,8 @@ img {
 }
 
 .footer__nav-link_orange:active {
-  color: var(--orange);
+  color: var(--lightorange);
+  opacity: 0.5;
 }
 
 .footer__bottom {
@@ -1528,7 +1595,7 @@ img {
 }
 
 .filter-form__power-title {
-  margin-bottom: 26px;
+  margin-bottom: 31px;
 }
 
 .filter-form__brands,
@@ -1592,9 +1659,12 @@ img {
 }
 
 
-.filter-form__brands-list-item:last-child,
-.filter-form__power-item:last-child {
+.filter-form__brands-list-item:last-child {
   margin-bottom: 0;
+}
+
+.filter-form__power-item:last-child {
+  margin-bottom: 10px;
 }
 
 .filter-form__brands-list,
@@ -1661,10 +1731,24 @@ img {
   opacity: 1;
 }
 
+.filter-form__brand-input:disabled + .filter-form__brand-item::before,
+.filter-form__brand-input:disabled + .filter-form__brand-item::after {
+  opacity: 0.25;
+}
+
+.filter-form__brand-input:disabled + .filter-form__brand-item:hover::before,
+.filter-form__brand-input:disabled + .filter-form__brand-item:hover::after {
+  opacity: 0.25;
+}
+
+.filter-form__brand-input:disabled + .filter-form__brand-item {
+  color: var(--gray);
+}
+
 .filter-form__power-item {
   position: relative;
   padding-left: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .filter-form__power-item::before {
@@ -1718,6 +1802,21 @@ img {
   background-color: var(--black);
   opacity: 0.5;
 }
+
+.filter-form__power-input:disabled + .filter-form__power-item::before,
+.filter-form__power-input:disabled + .filter-form__power-item::after {
+  opacity: 0.25;
+}
+
+.filter-form__power-input:disabled + .filter-form__power-item:hover::before,
+.filter-form__power-input:disabled + .filter-form__power-item:hover::after {
+  opacity: 0.25;
+}
+
+.filter-form__power-input:disabled + .filter-form__power-item {
+  color: var(--gray);
+}
+
 
 .filter-form__show-btn {
   width: 220px;

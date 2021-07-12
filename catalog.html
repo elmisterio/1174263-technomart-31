@@ -144,31 +144,31 @@
                   <legend class="filter-form__brands-title">Производители:</legend>
                   <ul class="filter-form__brands-list">
                     <li class="filter-form__brands-list-item">
-                      <input class="filter-form__brand-input visually-hidden" id="filter-form__bosch" type="checkbox" name="bosch" checked>
+                      <input class="filter-form__brand-input visually-hidden" id="filter-form__bosch" type="checkbox" name="brand-item" value="bosch" checked>
                       <label class="filter-form__brand-item" for="filter-form__bosch">
                         Bosch
                       </label>
                     </li>
                     <li class="filter-form__brands-list-item">
-                      <input class="filter-form__brand-input visually-hidden" id="filter-form__interskol" type="checkbox" name="interskol">
+                      <input class="filter-form__brand-input visually-hidden" id="filter-form__interskol" type="checkbox" name="brand-item" value="interskol">
                       <label class="filter-form__brand-item" for="filter-form__interskol">
                         Интерскол
                       </label>
                     </li>
                     <li class="filter-form__brands-list-item">
-                      <input class="filter-form__brand-input visually-hidden" id="filter-form__makita" type="checkbox" name="makita" checked>
+                      <input class="filter-form__brand-input visually-hidden" id="filter-form__makita" type="checkbox" name="brand-item" value="makita" checked>
                       <label class="filter-form__brand-item" for="filter-form__makita">
                         Makita
                       </label>
                     </li>
                     <li class="filter-form__brands-list-item">
-                      <input class="filter-form__brand-input visually-hidden" id="filter-form__dewalt" type="checkbox" name="dewalt">
+                      <input class="filter-form__brand-input visually-hidden" id="filter-form__dewalt" type="checkbox" name="brand-item" value="dewalt">
                       <label class="filter-form__brand-item" for="filter-form__dewalt">
                         DeWalt
                       </label>
                     </li>
                     <li class="filter-form__brands-list-item">
-                      <input class="filter-form__brand-input visually-hidden" id="filter-form__hitachi" type="checkbox" name="hitachi">
+                      <input class="filter-form__brand-input visually-hidden" id="filter-form__hitachi" type="checkbox" name="brand-item" value="hitachi">
                       <label class="filter-form__brand-item" for="filter-form__hitachi">
                         Hitachi
                       </label>
@@ -180,20 +180,15 @@
               <div class="filter-form__wrapper">
                 <fieldset class="filter-form__power">
                   <legend class="filter-form__power-title">Питание:</legend>
-                  <ul class="filter-form__power-list">
-                    <li class="filter-form__power-list-item">
-                      <input class="filter-form__power-input visually-hidden" id="filter-form__battery" type="radio" name="charge-type" value="battery" checked>
-                      <label class="filter-form__power-item" for="filter-form__battery">
-                        Аккумуляторные
-                      </label>
-                    </li>
-                    <li class="filter-form__power-list-item">
-                      <input class="filter-form__power-input visually-hidden" id="filter-form__network" type="radio" name="charge-type" value="mains">
-                      <label class="filter-form__power-item" for="filter-form__network">
-                        Сетевые
-                      </label>
-                    </li>
-                  </ul>
+                    <input class="filter-form__power-input visually-hidden" id="filter-form__battery" type="radio" name="charge-type" value="battery" checked>
+                    <label class="filter-form__power-item" for="filter-form__battery">
+                      Аккумуляторные
+                    </label>
+
+                    <input class="filter-form__power-input visually-hidden" id="filter-form__network" type="radio" name="charge-type" value="mains">
+                    <label class="filter-form__power-item" for="filter-form__network">
+                      Сетевые
+                    </label>
                 </fieldset>
               </div>
 
@@ -358,11 +353,11 @@
       <section class="about-category">
         <div class="container">
           <h2 class="about-category__title">Пара слов о перфораторах</h2>
-          <p class="about-category__descr descr">
-            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. <br>
-            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-          </p>
+          <div>
+            <p class="about-category__descr descr">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+            <p class="about-category__descr descr">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. </p>
+            <p class="about-category__descr descr">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          </div>
         </div>
       </section>
     </main>

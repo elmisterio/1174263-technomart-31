@@ -20,9 +20,8 @@
               <img class="main-header__logo-img" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
             </a>
             <form class="main-header__form" method="get" action="index.html">
-              <label class="main-header__search-input-label">
-                <input class="main-header__search-input" type="search" name="search" placeholder="Поиск:">
-              </label>
+              <input class="main-header__search-input" id="search-input" type="search" name="search" placeholder="Поиск:">
+              <label class="main-header__search-input-label" for="search-input"></label>
             </form>
             <a class="main-header__favorite" href="#">Закладки: 0</a>
             <a class="main-header__cart" href="#">Корзина: 0</a>
@@ -121,6 +120,8 @@
                 <h3 class="slider__title">Перфораторы</h3>
                 <p class="slider__subtitle">Настоящие мужские игрушки</p>
                 <a class="red-btn btn" href="catalog.html">Открыть каталог</a>
+                <span class="slider__pagination_first"></span>
+                <span class="slider__pagination_second"></span>
               </article>
             </li>
             <li class="category__item slider slider-drill visually-hidden">
